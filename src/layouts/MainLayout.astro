@@ -26,13 +26,20 @@
                 @apply text-xl font-bold;
             }
 
-        
             .filters {
                 @apply mb-4 flex flex-col md:flex-row gap-4;
             }
 
             .filter-input {
                 @apply p-2 border rounded;
+            }
+
+            .checkbox-label {
+                @apply p-2 flex items-center;
+            }
+
+            .checkbox-text {
+                @apply ml-2 text-gray-700;
             }
 
             .pagination {
@@ -51,4 +58,3 @@
         <slot />
     </body>
 </html>
-

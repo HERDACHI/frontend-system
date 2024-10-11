@@ -1,13 +1,11 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro';
-import FilterPagination from '../components/FilterPagination.tsx';
-import Articles from '../data/articles.json';
+import MainLayout from "../layouts/MainLayout.astro";
+import FilterPagination from "../components/FilterPagination.tsx";
 ---
 
 <MainLayout>
   <div class="articles-container">
     <h1 class="articles-list-title">Lista de Artículos</h1>
-    <FilterPagination articles={Articles} client:load />
+    <FilterPagination client:load />
   </div>
 </MainLayout>
-

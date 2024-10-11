@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 type Article = {
   id: number;
   title: string;
@@ -14,7 +13,11 @@ type Article = {
   rating: number;
 };
 
-const ArticleCard: React.FC<{ article: Article }> = ({ article }) => {
+interface ArticleCardProps {
+  article: Article;
+}
+
+const ArticleCard: React.FC<ArticleCardProps> = ({ article }) => {
   return (
     <div className="article-card">
       <h2 className="article-title">{article.title}</h2>
@@ -31,3 +34,4 @@ const ArticleCard: React.FC<{ article: Article }> = ({ article }) => {
 };
 
 export default ArticleCard;
+
