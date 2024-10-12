@@ -86,7 +86,6 @@ Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 
 # Servir Aplicación Astro con NGINX en Docker
 
-## Pasos para Servir `dist` con NGINX en Docker
 
 ### 1. Construir el proyecto para generar la carpeta `dist`
 ```
