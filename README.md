@@ -58,16 +58,20 @@ Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 
 1. Clona el repositorio:
 
-   ```bash
+   ```
    git clone  git@github.com:HERDACHI/frontend-system.git
    cd frontend-system
    ```
 
 2. Instala las dependencias:
-    npm install
+   ```
+   npm install
+   ```
 
 3. Inicia el servidor de desarrollo:
+   ```
    npm run dev
+   ```
 
 4. Abre tu navegador y navega a http://localhost:4321 para ver la aplicación en funcionamiento.
 
@@ -82,3 +86,42 @@ Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
   Este componente maneja la lógica de filtrado y permite buscar por un criterio seleccionado.
 - FilterPagination.tsx
   Este componente maneja la lógica de paginación y permite navegar entre páginas.. 
+
+# Servir Aplicación Astro con NGINX en Docker
+
+Estos son los pasos para servir la carpeta `dist` de un proyecto Astro utilizando una imagen de NGINX en Docker.
+
+## Pasos para Servir `dist` con NGINX en Docker
+
+### 1. Construir el proyecto para generar la carpeta `dist`
+```
+npm run build
+```
+
+2. Crear el Dockerfile
+```
+# Usar una imagen base de NGINX
+FROM nginx:alpine
+
+# Copiar los archivos de construcción a la carpeta NGINX
+COPY ./dist /usr/share/nginx/html
+
+# Exponer el puerto 80
+EXPOSE 80
+```
+
+3. Contruir la imagen de Docker
+```
+docker build -t astro-nginx-app .
+```
+4. Ejecutar el contenedor de Docker en el puerto 8080 o un puerto diferente.
+```
+docker run -p 8080:80 astro-nginx-app
+```
+5. Acceder a la aplicación
+```
+Acceder a la aplicación en http://ip-servidor:8080.
+```
+
+
+
