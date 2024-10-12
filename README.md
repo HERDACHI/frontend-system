@@ -82,10 +82,9 @@ Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 - El campo "Buscar por serial" es un filtro que permite buscar según el serial del artículo.
 - La lista de artículos está mostrada para una paginación de 6 en 6.
 - Los botones de paginación se encuentran en la parte inferior del listado definidos por números 
-  y se puede acceder a cada pagina haciendo click sobre estos.
+  y se puede acceder a cada página haciendo click sobre estos.
 
 # Servir Aplicación Astro con NGINX en Docker
-Estos son los pasos para servir la carpeta `dist` de un proyecto Astro utilizando una imagen de NGINX en Docker.
 
 ## Pasos para Servir `dist` con NGINX en Docker
 
