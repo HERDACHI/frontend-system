@@ -43,8 +43,8 @@ Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 ### Componentes
 
 - **ArticleCard.tsx**: Componente de React que muestra la información de un artículo.
-- **FilterPagination.tsx**: Componente de React que maneja la lógica de paginación.
-- **Filters.tsx**: Componente que maneja la lógica de filtrado para los criterios de busqueda.
+- **FilterPagination.tsx**: Componente de React que maneja la lógica de paginación y maneja según los casos los filtros definidos en Filters.txt.
+- **Filters.tsx**: Componente de React que implementa la lógica de filtrado para los criterios de busqueda.
 
 ### Layouts
 
@@ -76,19 +76,15 @@ Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 4. Abre tu navegador y navega a http://localhost:4321 para ver la aplicación en funcionamiento.
 
 ## Uso
-- ArticleCard.tsx
-  Este componente recibe un objeto article como prop y muestra la información del artículo. 
-- index.astro
-  La página principal que muestra la lista de artículos con paginación.  
-- MainLayout.astro
-  Este layout aplica estilos globales utilizando Tailwind CSS.
-- Filters.tsx  
-  Este componente maneja la lógica de filtrado y permite buscar por un criterio seleccionado.
-- FilterPagination.tsx
-  Este componente maneja la lógica de paginación y permite navegar entre páginas.. 
+- Puedes ver la aplicación en funcionamiento navegando a http://147.182.199.159:8080/
+- El checkbox "Con stock" muestra solo los artículos con stock>0.
+- El campo "Buscar por título" permite buscar un artículo por su nombre o titulo.
+- El campo "Buscar por serial" es un filtro que permite buscar según el serial del artículo.
+- La lista de artículos está mostrada para una paginación de 6 en 6.
+- Los botones de paginación se encuentran en la parte inferior del listado definidos por números 
+  y se puede acceder a cada pagina haciendo click sobre estos.
 
 # Servir Aplicación Astro con NGINX en Docker
-
 Estos son los pasos para servir la carpeta `dist` de un proyecto Astro utilizando una imagen de NGINX en Docker.
 
 ## Pasos para Servir `dist` con NGINX en Docker
