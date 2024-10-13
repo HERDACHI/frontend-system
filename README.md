@@ -1,11 +1,11 @@
 # Proyecto de Lista de Artículos
 
-Este proyecto es una aplicación web desarrollada con Astro y React que muestra una lista de artículos con paginación. Utiliza Tailwind CSS para el diseño y estilo de los componentes.
+Este proyecto es una aplicación web desarrollada con Astro y React que muestra una lista de artículos con paginación y filtrado para busqueda. Utiliza Tailwind CSS para el diseño y estilo de los componentes.
 
 ## Características
 
 - **Listado de Artículos**: Muestra una lista de artículos con detalles como título, descripción, precio, stock, categoría, serial, marca, descuento y calificación.
-- **Paginación**: Permite navegar entre páginas de artículos, mostrando 5 artículos por página.
+- **Paginación**: Permite navegar entre páginas de artículos, mostrando 6 artículos por página.
 - **Estilos con Tailwind CSS**: Utiliza clases de utilidad de Tailwind CSS para un diseño moderno y responsivo.
 
 ## 🚀 Estructura del Proyecto
@@ -52,7 +52,7 @@ Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 
 ### Páginas
 
-- **index.astro**: Página principal que muestra la lista de artículos con paginación.
+- **index.astro**: Página principal que muestra la lista de artículos con paginación y filtros de busqueda.
 
 ## Instalación
 
@@ -76,7 +76,7 @@ Dentro de tu proyecto Astro, verás las siguientes carpetas y archivos:
 4. Abre tu navegador y navega a http://localhost:4321 para ver la aplicación en funcionamiento.
 
 ## Uso
-- Puedes ver la aplicación en funcionamiento navegando a http://147.182.199.159:8080/
+- Puedes ver la aplicación desplegada navegando a http://147.182.199.159:8080/
 - El checkbox "Con stock" muestra solo los artículos con stock>0.
 - El campo "Buscar por título" permite buscar un artículo por su nombre o titulo.
 - El campo "Buscar por serial" es un filtro que permite buscar según el serial del artículo.
